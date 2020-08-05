@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <!-- this help for wacht the web page in the phone-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit-no">
-    <meta name ="name" content= "Sergio Figueroa">
-    <!-- meta name "robots" content= " nondex , no follow" para que no aparezca en buscadores -->
-    <title>Sergio Figueroa </title>
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css ">
+  <title>Document</title>
 </head>
 
-
-
 <body>
-    <hr>
-    <img src="images/mylogo.png" width="70%" alt="banner">
-    <h1>Sergio Figueroa</h1>
-    <h2>Acerca de mi</h2>
-    <p>Estudiante universitario de ingenieria apasionado
-    tanto por la tecnologia como por las artes.</p>
-    <p>Mantenerme en un estado de constante apredizaje
-    es de las cosas que mas me gusta sobretodo 
-    cuando se trata de la informatica. </p>
-    <p>Tengo un dominio basico de los lenguajes C, C++, Python,
-    y kotlin con los cuales pienso desarrollar mi carrera.</p>
-    <h2>Proyectos y Portafolio</h2>
-    <p><a href="resumen.html">My resumen</a> | <a href="https://github.com/FigueroaSergio">Mi github</a></p>
-    <h2>Contacto</h2>
-    <p>Email: <a href="mailto:figueroa.sergio.26@gmail.com">figueroa.sergio.26@gmail.com</a></p>
+  <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- container nos sirve para que no ocupe toda el largo de la pantalla-->
+      <a class="navbar-brand mr-auto" href="./index.html"></a>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav mr-auto">
+          <!--mr-auto   hace que los elemento se alieneen a la izquierda         -->
+          <li class="nav-item"><a class="nav-link active " href="index.html">Home </a></li>
+          <!-- active  hara que el boton se vea    brillante   -->
+          <li class="nav-item"><a class="nav-link " href="#">About </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="jumbotron">
+    <div class="container">
+      <div class="row row-headers">
+        <div class="col-12 col-sm-6">
+          <h1>Acerca de mi</h1>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+
 </body>
-<!--this make a like across the screen-->
-<footer>
-    <hr>    
-    <code>Copyright (c) 2020 Sergio Figueroa</code>
 
-</footer>
-
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 
 
 </html>
-
-
-
-
-

@@ -1,0 +1,29 @@
+
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 50px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.jumbotron {
+    margin: 0px auto;
+    padding: 70px 30px;
+    color: floralwhite;
+    background:linear-gradient(to bottom left, #6dff68,#4b6bfb);
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: black; }
+    .navbar-dark {
+        background-color: #4b6bfb !important; }
+      
