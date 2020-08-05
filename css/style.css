@@ -1,9 +1,8 @@
-
-
 .row-content {
     margin: 0px auto;
     padding: 50px 50px;
     border-bottom: 1px ridge;
+    color: antiquewhite;
     min-height: 400px;
 }
 
@@ -11,19 +10,21 @@
     margin: 0px auto;
     padding: 70px 30px;
     color: floralwhite;
-    background:linear-gradient(to bottom left, #6dff68,#4b6bfb);
+    background-color: transparent !important;
 }
-
-body {
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
-}
-
 
 .address {
     font-size: 80%;
     margin: 0px;
-    color: black; }
-    .navbar-dark {
-        background-color: #4b6bfb !important; }
-      
+    color: black;
+}
+
+
+
+
+
+
+body {
+    padding: 50px 0px 0px 0px;
+    background: linear-gradient(to bottom left, #2cdf76, #01245c)fixed !important;
+}
