@@ -1,4 +1,4 @@
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     if ($("#menu").offset().top > 56) {
         $("#menu").css({'background':'#25c768'});
         $("#menu").removeClass('navbar-dark');
@@ -8,4 +8,4 @@ $(window).scroll(function() {
         $("#menu").removeClass('navbar-light');
         $("#menu").addClass('navbar-dark');
     }
-  });
+  });*/

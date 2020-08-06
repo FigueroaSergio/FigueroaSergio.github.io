@@ -6,6 +6,7 @@
     min-height: 400px;
 }
 
+
 .jumbotron {
     margin: 0px auto;
     padding: 70px 30px;
@@ -13,12 +14,15 @@
     background-color: transparent !important;
 }
 
+
 .address {
     font-size: 80%;
     margin: 0px;
     color: black;
 }
-
+.navbar-dark{
+    background: linear-gradient(to bottom left, #2cdf76, #01245c)fixed !important;
+}
 
 
 
