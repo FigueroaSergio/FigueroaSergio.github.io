@@ -4,9 +4,8 @@
     border-bottom: 1px ridge;
     color: antiquewhite;
     min-height: 400px;
+    text-align: center;
 }
-
-
 .jumbotron {
     margin: 0px auto;
     padding: 70px 30px;
@@ -14,21 +13,16 @@
     background-color: transparent !important;
 }
 
-
-.address {
-    font-size: 80%;
-    margin: 0px;
-    color: black;
-}
 .navbar-dark{
     background: linear-gradient(to bottom left, #2cdf76, #01245c)fixed !important;
 }
 
-
-
-
-
 body {
     padding: 50px 0px 0px 0px;
     background: linear-gradient(to bottom left, #2cdf76, #01245c)fixed !important;
+}
+
+h4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
