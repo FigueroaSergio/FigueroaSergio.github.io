@@ -9,28 +9,29 @@
         $("#menu").addClass('navbar-dark');
     }
   });*/
-function generateRandomNumber (min, max) {
+function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 };
+
 function randomButton() {
 
     var boton = document.getElementById("randomButton")
     switch (generateRandomNumber(1, 4)) {
         case 1:
             boton.innerHTML = "3D models";
-            boton.href="/3DModels.html"
+            boton.href = "/3DModels.html"
             break;
         case 2:
-            boton.innerHTML= "Android";
-            boton.href="/resumen.html";
+            boton.innerHTML = "Android";
+            boton.href = "/android.html";
             break;
         case 3:
-            boton.innerHTML= "Fotos";
-            boton.href="/fotos.html"
+            boton.innerHTML = "Fotos";
+            boton.href = "/fotos.html"
             break;
         case 4:
             boton.innerHTML = "Sobre mi";
-            boton.href="/resumen.html"
+            boton.href = "/sobreMi.html"
             break;
 
     }
