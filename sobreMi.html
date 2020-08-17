@@ -1,67 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css ">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Sobre Mi</title>
+  </head>
 
-  <nav id="menu" class="navbar navbar-expand-lg navbar-dark  fixed-top">
-    <div class="container" id="contMenu">
-      <a class="navbar-brand" href="#"><strong>Let's Go</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <body>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/3DModels.html">3D Models</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/android.html">Android</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/fotos.html">Fotos</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Sobre mi</a>
-          </li>
-        </ul>
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+      <div class="container" id="contMenu">
+        <a class="navbar-brand" href="#"><strong>Let's Go</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/3DModels.html">3D Models</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/android.html">Android</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/fotos.html">Fotos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sobre mi</a>
+            </li>
+          </ul>
 
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="row row-content">
-      <div class="col-12">
-
-        <h1>Sobre Mi</h1>
-
-    
-
-       
+        </div>
 
       </div>
+    </nav>
+
+    <div class="container">
+      <div class="row row-headers">
+        <div class="col-12">
+
+          <h1>Sobre Mi</h1>
+
+        </div>
+      </div>
+      <div class="row row-content align-items-center">
+
+        <div class="col-12 col-sm-6 col-md-8 order-sm-1 order-2">
+          <h2 class="mt-0">
+            Quien soy?
+          </h2>
+          <h5>
+            Soy un estudiante de Ing. Electrónica en la Universidad del Valle apasionado por la tecnología, su
+            funcionamiento y las grandes posibilidades que traen. Me encanta asumir retos de programación, desarrollar
+            interfaces y realizar scripts para mejorar mis habilidades, así mismo me gusta aprender cada dia cosas
+            nuevas y aún más si se tratan de informática.
+            <br>
+            <br>
+            Manejo conceptos básicos en una variedad de lenguajes como c, c++ , java y los que se muestran a
+            continuacion
+            los cuales uso mas comunmente en proyectos de practicas personales.
+
+
+          </h5>
+        </div>
+        <div class="col-12 col-sm-6  col-md-4 text-center order-md-2 order-1">
+          <img class="img-fluid img-thumbnail" src="./images/foto.jpg" height="400px" width="200px">
+        </div>
+      </div>
+
+      <!-- Aqui enpieazan las targetas -->
+      <div class="row row-cols-1 row-cols-md-3 row-content">
+        <div class="col mb-4">
+          <div class="card h-100 text-dark bg-light align-items-center">
+            <img src="./images/kotlin.png" class="card-img-top" alt="kotlin">
+            <div class="card-body">
+              <h5 class="card-title">kotlin</h5>
+              <p class="card-text">Es un lenguaje compilado e interpretado por la JVM, que
+                google adoptó para el desarrollo de apps en android, razón por la cual lo practico bastante y es uno de
+                los que mayor interés me genera ya que en la actualidad usamos más los celulares que el computador.
+
+              </p>
+              <h5 class="card-title">Dominio:</h5>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-dark bg-light align-items-center  ">
+            <img src="./images/javaScript.svg" class="card-img-top" alt="bootstrap" id="imgBootstrap" id="imgHtml">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">Lenguaje de programación originalmente diseñado para trabajar en el
+                navegador, se puede utilizar tanto en front-end como en back-end, por esto lo estoy
+                aprendiendo para así aprovechar herramientas como Express, Mongodb y React JS.
+
+
+              </p>
+              <h5 class="card-title">Dominio:</h5>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:20%" aria-valuenow="20" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-dark bg-light align-items-center">
+            <img src="./images/python.png" class="card-img-top" alt="python" id="imgPython">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Al tratarse de un lenguaje de fácil sintaxis y comúnmente utilizado en el desarrollo
+                de inteligencia artificial me lo estoy aprendiendo y explorando sus funcionalidades para en futuro
+                desarrollar y entender la inteligencia artificial. También por que para scripts en el pc es más fácil
+                de
+                utilizar.
+
+
+
+              </p>
+              <h5 class="card-title">Dominio:</h5>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col mb-4">
+
+        </div>
+
+        <div class="col mb-4">
+          <div class="card h-100 text-dark bg-light align-items-center  ">
+            <img src="./images/bootstrap.png" class="card-img-top" alt="bootstrap" id="imgBootstrap">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">Es un framework creado por twitter para el desarrollo de interfaces Web con
+                él se logró consolidar el diseño de este blog y facilitar su funcionalidad tanto para pc como para
+                celulares.
+              </p>
+              <h5 class="card-title">Dominio:</h5>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:20%" aria-valuenow="20" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
     </div>
-  </div>
 
 
-</body>
 
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-</html>
+
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  </html>

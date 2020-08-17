@@ -1,16 +1,18 @@
 .row-headers {
     padding: 50px 50px;
     text-align: center;
-    color: antiquewhite;}
-    
+    color: antiquewhite;
+}
+
 .row-content {
     margin: 0px auto;
     padding: 50px 50px;
     border-bottom: 1px ridge;
     color: antiquewhite;
     min-height: 400px;
-    text-align: center;
+
 }
+
 .jumbotron {
     margin: 0px auto;
     padding: 70px 30px;
@@ -18,8 +20,37 @@
     background-color: transparent !important;
 }
 
-.navbar-dark{
+.navbar-dark {
     background: linear-gradient(to bottom left, #2cdf76, #01245c)fixed !important;
+}
+
+.card {
+    /* background: linear-gradient(to bottom left, #2cdf76, #01245c)fixed !important;
+    border: floralwhite 1px solid !important; */
+    border-radius: 20px !important;
+}
+
+.progress-bar {
+    background: #2cdf76 !important;
+}
+
+
+
+#imgPython {
+    max-width: 60%;
+    max-height: 70%;
+    margin: 25px;
+
+}
+
+#imgBootstrap {
+    max-width: 50%;
+    max-height: 60%;
+    margin: 25px;
+}
+
+.img-thumbnail {
+    border-radius: 20px !important;
 }
 
 body {
