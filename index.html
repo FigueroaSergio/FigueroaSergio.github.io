@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="/images/energia.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <title>Home</title>
@@ -15,7 +16,8 @@
 
   <nav id="menu" class="navbar navbar-expand-lg navbar-dark  fixed-top">
     <div class="container" id="contMenu">
-      <a class="navbar-brand" href="#"><strong>Let's Go</strong></a>
+      <a class="navbar-brand" href="#"><img src="https://i.imgur.com/QJNyS6x.png"
+          class=" d-inline-block align-items-center icon" alt="logo" loading="lazy"><strong>Let's Go</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,14 +28,19 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/3DModels.html">3D Models</a>
+          <li class="nav-item ">
+            <a class="nav-link disabled" href="/3DModels.html">3D Models</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="programacion" href="#" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Programacion</a>
+            <ul class="dropdown-menu" aria-labelledby="programacion">
+              <li><a href="/android.html" class="dropdown-item">Android</a></li>
+              <li><a href="/liteCommerce.html" class="dropdown-item">Lite Commerce</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/android.html">Android</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/fotos.html">Fotos</a>
+            <a class="nav-link disabled" href="/fotos.html">Fotos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/sobreMi.html">Sobre mi</a>
