@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/energia.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Insta Scrapping</title>
+
+</head>
+
+<body>
+
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container" id="contMenu">
+            <a class="navbar-brand" href="#"><img src="https://i.imgur.com/QJNyS6x.png"
+                    class=" d-inline-block align-items-center icon" alt="logo" loading="lazy"><strong>Let's
+                    Go</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item "">
+            <a class=" nav-link disabled" href="/3DModels.html">3D Models</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" id="programacion" href="#" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Programacion</a>
+                        <ul class="dropdown-menu" aria-labelledby="programacion">
+                            <li><a href="/android.html" class="dropdown-item">Android Database</a></li>
+                            <li><a href="/liteCommerce.html" class="dropdown-item">Lite Commerce</a></li>
+                            <li><a href="/InstagramWeb.html" class="dropdown-item">Insta Scrapping</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item "">
+            <a class=" nav-link disabled" href="/fotos.html">Fotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobreMi.html">Sobre mi</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row row-headers ">
+            <div class="col-12">
+                <h1>Instagram Web Scrapping</h1>
+            </div>
+        </div>
+       
+
+        <!-- Aqui inician los modal paginas que se desplegan al hacer clic en una imagen -->
+        <div class="modal fade" id="loginEcomerce" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Principal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid " src="https://i.imgur.com/dpV3ao5.png" alt="principal">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="adminPage" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Estadisticas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid " src="https://i.imgur.com/qNgoaa4.png" alt="estadisticas web">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="crearProducto" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Vista movil</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="mobile desing">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-content align-items-center text-center justify-content-md-center">
+                           <img class="img-fluid" style="max-height:600px; max-width: 280px;" src="https://i.imgur.com/8L2eheH.png"
+                            alt="paginaa de creacion de productos"> 
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- aqui estan las imagenes y sus descripciones -->
+        <div class="row row-content align-items-center text-center">
+
+
+            <div class="col-12  ">
+                <img class="img-fluid " src="https://i.imgur.com/dpV3ao5.png" alt="login del Ecommerce" min-height="600px"
+                   min-width="400px" data-toggle="modal" data-target="#loginEcomerce">
+            </div>
+
+
+            <div class="col-12">
+                <h2 class="mt-0">
+                    Busca
+                </h2>
+                <h5>Mediante el uso de web Scrapping se obtiene los datos publicos de un usuario en instagram se los almacena en forma de objetos 
+                    y se grafican de esta manera se pueden ver los datos de varios usarios al mismo tiempo
+                </h5>
+            </div>
+
+        </div>
+        <div class="row row-content align-items-center text-center">
+
+            <div class="col-12 col-sm-6 col-md-8 order-sm-1 order-2 ">
+                <h2 class="mt-0 ">
+                    Realiza pequeños analisis
+                </h2>
+                <h5>Apartir del Scrapping traza un linea tiempo con publicaciones realizadas y la cantidad de likes obtenidad en cada una
+                </h5>
+            </div>
+            <div class="col-12 col-sm-6  col-md-4 order-sm-2 order-1">
+                <img class="img-fluid " src="https://i.imgur.com/qNgoaa4.png" alt="pagina de administracion"
+                    height="670px" width="470px" data-toggle="modal" data-target="#adminPage">
+            </div>
+        </div>
+        <div class="row row-content align-items-center text-center">
+            <div class="col-12 col-sm-6  col-md-4">
+                <img class="img-fluid " src="https://i.imgur.com/8L2eheH.png" alt="pagina de creacion de productos"
+                    height="470px" width="270px" data-toggle="modal" data-target="#crearProducto">
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-8">
+                <h2 class="mt-0">
+                    Algo resposive
+                </h2>
+                <h5> Con la ayuda de Bootstrap se puede pueden correr la app desde tu celular y seguira viendose Genial!
+                </h5>
+            </div>
+
+        </div>
+       
+        <div class="row row-headers ">
+            <div class="col-12">
+                <h1>Tegnologias Usadas</h1>
+            </div>
+        </div>
+        <div class="row row-content align-items-center text-center justify-content-md-center">
+            <div class="col-6 col-sm-2">
+                <img class="img-fluid img-logo" src="https://i.imgur.com/NDFxruh.png" alt="expressLogo">
+                <a href="https://expressjs.com/es/" class="link-text">
+                    <h3>Express</h3>
+                </a>
+            </div>
+            <div class=" col-6 col-sm-2 ">
+                <img class="img-fluid img-logo" src="https://i.imgur.com/ijDwkvj.png" alt="Puppeteer">
+                <a href="https://pptr.dev/" class="link-text">
+                    <h3>Puppeteer</h3>
+                </a>
+            </div>
+           
+
+
+            <div class="col-6 col-sm-2">
+                <img class="img-fluid img-logo" src="https://i.imgur.com/Ip5NkPW.png" alt="NodejsLogo">
+                <a class="link-text" href="https://nodejs.org/es/">
+                    <h3>Node JS</h3>
+                </a>
+            </div>
+        
+            <div class="col-6 col-sm-2">
+                <img class="img-fluid img-logo" src="https://i.imgur.com/0ghToAq.png" alt="bootstrapLogo">
+                <a href="https://getbootstrap.com/" class="link-text">
+                    <h3>Bootstrap</h3>
+                </a>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+
+
+
+
+</html>
