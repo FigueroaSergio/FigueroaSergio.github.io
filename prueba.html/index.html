@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Recinto</title>
+  </head>
+  <body>
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo"><strong>RE</strong>CINTO</div>
+      <ul class="links">
+        <li><a href="">Inicio</a></li>
+        <li><a href="#about">Portafolio</a></li>
+        <li><a href="#work">Nosotros</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="/contact.html">Contacto</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <svg
+          id="icon-menu"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </label>
+    </nav>
+    <section id="content">
+      <div class="container">
+        <section class="banner">
+          <div class="banner-content">
+            <h1>PORQUE NOSOTROS</h1>
+            <p>
+              Consideramos el diseño como una forma vital de desarrollo, la
+              calidad y profesionalismo de nuestra empresa asegura que su
+              inversión este al mas alto nivel de su expectativa
+            </p>
+          </div>
+        </section>
+        <section class="info">
+          <h1>NUESTRA EXPERIENCIA MUESTRA</h1>
+          <p>
+            Que bajo la filosofía del mejoramiento continuo en búsqueda de la
+            excelencia en la calidad, la compañía trabaja con programas y
+            equipos más avanzados, lo que le permite elaborar y presentar
+            proyectos con la más alta tecnología.
+          </p>
+        </section>
+      </div>
+      <section>
+        <div class="footer">
+          <div class="foo-logo">
+            <img src="https://i.imgur.com/e2WoyqZ.jpg" alt="" />
+          </div>
+          <div class="foo-contact">
+            <p><strong>Contacto</strong></p>
+            <p>
+              <a href="https://goo.gl/maps/RVaaNcdeeaAaaf2EA">
+                Carrera 2 esquina Calle 130 #13-20, Cali, Valle del Cauca</a
+              >
+            </p>
+            <p>
+              <a href="mailto: proyectos@recintoestudio.com"
+                >proyectos@recintoestudio.com</a
+              >
+            </p>
+            <p>
+              <a href="mailto:gerencia@recintoestudio.com ">
+                gerencia@recintoestudio.com</a
+              >
+            </p>
+            <p><a href="tel:+57 24017518">+57 24017518</a></p>
+          </div>
+          <div class="foo-links">
+            <p><strong>Enlaces</strong></p>
+            <p><a href="#about">Portafolio</a></p>
+            <p><a href="#work">Nosotros</a></p>
+            <p><a href="#projects">Proyectos</a></p>
+            <p><a href="#contact">Contacto</a></p>
+          </div>
+        </div>
+      </section>
+      <audio
+        id="musica"
+        src="https://freesound.org/data/previews/412/412308_7707368-hq.mp3"
+        autoplay
+      ></audio>
+    </section>
+    <!-- Load -->
+    <section id="loader">
+      <div><p>Click para continuar</p></div>
+    </section>
+  </body>
+  <script>
+    var musica = document.getElementById("musica");
+    var mydocumento = document.getElementById("content");
+    var loader = document.getElementById("loader");
+    loader.addEventListener("click", () => {
+      loader.style.display = "none";
+      mydocumento.style.display = "block";
+      musica.play();
+    });
+  </script>
+</html>

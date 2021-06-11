@@ -1,0 +1,39 @@
+.banner {
+  background-image: url("https://i.imgur.com/ZF3Po4r.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-content {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: left;
+  color: white;
+  width: 100%;
+}
+
+.info {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.banner-content p,
+.info p {
+  font-size: 20pt;
+  padding: 0 10% 10% 10%;
+}
+@media screen and (max-width: 768px) {
+  .banner-content p,
+  .info p {
+    font-size: 18pt;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner-content p,
+  .info p {
+    font-size: 14pt;
+  }
+}
