@@ -4,41 +4,45 @@
   --green: #1fa56e;
   --gray: #cdcccc;
   --dark-gray: #636363;
-  --ligth-gray: #f7f7f7;
+  --light-gray: #f7f7f7;
   --blue: #293e76;
   --bg-gradient: linear-gradient(254.43deg, #1ab575 -18.86%, #293e76 155.8%);
 }
 #body {
   font-family: "Trirong", serif;
+  overflow-x: hidden !important;
+
+  width: 100%;
 }
 main {
   margin-top: 10%;
 }
-.row {
-  min-height: 40vh;
-}
+
 .row.section-pre {
+  min-height: 40vh;
   margin-bottom: 60px;
 }
-.row div.circle {
+div.circle {
+  z-index: -100;
   position: absolute;
   padding: 0;
   border: 1px solid var(--gray);
   border-radius: 50%;
 }
-.row div.circle-lg {
+div.circle-lg {
   top: 40px;
   left: 100px;
   width: 600px;
   height: 600px;
 }
-.row div.circle-sm {
+div.circle-sm {
   top: 80px;
   left: 400px;
   height: 200px;
   width: 200px;
 }
-.row div.cube {
+div.cube {
+  z-index: -100;
   position: absolute;
   padding: 0;
   height: 14px;
@@ -46,16 +50,16 @@ main {
   background-color: var(--dark-gray);
   transform: rotate(45deg);
 }
-.row div.cube.c-1 {
+div.cube.c-1 {
   top: 10%;
   left: 10%;
 }
-.row div.cube.c-2 {
+div.cube.c-2 {
   top: 5%;
   right: 20%;
 }
-.row div.cube.c-3 {
-  top: 80%;
+div.cube.c-3 {
+  top: 50%;
   right: 10%;
 }
 .row div.box {
@@ -84,4 +88,41 @@ main {
 .row div.col.description {
   z-index: 100;
   padding: 70px 70px;
+}
+
+section.section-exp {
+  text-align: center;
+  padding: 30px;
+  background: var(--light-gray);
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--gray);
+}
+
+section.section-exp .card {
+  background: var(--light-gray);
+  place-items: center;
+  width: 6em;
+
+  padding: 20px 0;
+  margin: auto;
+}
+section.section-exp img {
+  width: 36px;
+  height: 36px;
+}
+section.section-exp .card .card-body {
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  section.section-exp .row div {
+    padding: 4px;
+  }
+  section.section-exp .card {
+    flex-direction: row;
+    width: 100%;
+    padding: 8px;
+  }
 }
