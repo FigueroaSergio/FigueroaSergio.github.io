@@ -90,8 +90,7 @@ div.cube.c-3 {
   padding: 70px 70px;
 }
 
-section.section-exp,
-section.row.section-ser {
+section {
   padding: 30px;
 }
 section > h2 {
@@ -135,7 +134,29 @@ section.section-ser .card .card-text {
 section.section-ser h2 {
   color: var(--green);
 }
-
+section.section-pro {
+  background: var(--bg-gradient);
+}
+section.section-pro h2 {
+  color: var(--white);
+}
+.carousel-item .card {
+  margin: auto;
+  max-width: 70%;
+  height: 100%;
+}
+.carousel-item .card > div > div {
+  align-self: center;
+  justify-content: center;
+}
+.carousel-item .card img {
+  max-height: 16vh;
+  display: block;
+  margin: auto;
+}
+.carousel-item .card .card-text {
+  min-height: 12vh;
+}
 @media (max-width: 992px) {
   section.section-exp .row div {
     padding: 4px;
