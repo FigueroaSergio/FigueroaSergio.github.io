@@ -101,6 +101,8 @@ section.row.section-exp {
   background: var(--light-gray);
   border-top: 1px;
   border-bottom: 1px;
+  border-left: 0;
+  border-right: 0;
   border-style: solid;
   border-color: var(--gray);
 }
@@ -156,6 +158,13 @@ section.section-pro h2 {
 }
 .carousel-item .card .card-text {
   min-height: 12vh;
+}
+footer ul li a img {
+  width: 36px;
+  height: 36px;
+  -webkit-filter: grayscale(1); /* Webkit */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* W3C */
 }
 @media (max-width: 992px) {
   section.section-exp .row div {
