@@ -8,10 +8,13 @@
   --blue: #293e76;
   --bg-gradient: linear-gradient(254.43deg, #1ab575 -18.86%, #293e76 155.8%);
 }
+html {
+  overflow-x: hidden;
+}
 #body {
   font-family: "Trirong", serif;
   overflow-x: hidden !important;
-
+  position: relative;
   max-width: 100vw !important;
 }
 main {
@@ -159,7 +162,7 @@ section.section-pro h2 {
 }
 .carousel-item .card .card-text {
   max-height: 900px;
-  min-height: 16vh;
+  min-height: 20vh;
 }
 footer ul li a img {
   width: 36px;
@@ -176,5 +179,13 @@ footer ul li a img {
     flex-direction: row;
     width: 100%;
     padding: 8px;
+  }
+}
+@media (max-width: 572px) {
+  .carousel-item .card h5 {
+    height: 52px;
+  }
+  .carousel-item .card .card-text {
+    height: 250px;
   }
 }
